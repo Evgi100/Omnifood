@@ -1,0 +1,587 @@
+/* ------------------------------ */
+/* Initialization of basic setup */
+/* ------------------------------ */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+/* The box-sizing property allows us to include the padding and border in an element's total width and height */
+
+
+html,body {
+    background-color: #fff;
+    color:#555;
+    font-family:'Lato','Arial',sans-serif ;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix{zoom:1}
+.clearfix:after {
+    content: '.';
+    clear:both;
+    display:block;
+    height:0;
+    visibility: hidden;
+}
+
+/* ------------------------------ */
+/* Reusable components */
+/* ------------------------------ */
+
+section {
+    padding: 80px 0;
+}
+
+.row {
+    max-width: 1140px;
+    margin:0 auto 0 auto 
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+.sectionTitle {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size:140%;
+}
+
+.sectionTitle:after {
+    display:block;
+    background-color: #e67e22;
+    content :"";
+    height:2px;
+    width:380px;
+    margin : 0 auto;
+    margin-top:13px;
+}
+
+/* ------------------------------ */
+/* The header  */
+/* ------------------------------ */
+
+/* Set the max widht to 1140px which is somewhat an default desktop web width, meaning that other child elements will be percantage of the max-width */
+.logoIcon,.logoBlack{
+    width:120px;
+    height:100px;
+    float: left;
+    margin-top:12px;
+}
+
+.logoBlack {
+    display: none;
+  
+}
+
+header {
+    /* Using the linear-gradient let us place text over pictures so that the text is better seen  */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.705)),url("hero.jpg");
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 100vh;
+    /* 100 percent of the viewport */
+}
+
+
+
+.header-text-box {
+    color:white;
+    /* font-size: 150%; */
+    /* The font-size is relative to the html 20px size */
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%)
+}
+
+/* ------------------------------ */
+/* Buttons  */
+/* ------------------------------ */
+
+.btn:link,.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding:10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    /* The text-decoration:none removes the blue visited underline style of a a link tag */
+    transition: background-color 0.7s,border 0.2s,color 0.2s
+}
+
+.btn:hover, .btn:active,input[type=submit] {
+
+    background-color:#cf6d17;
+    cursor: pointer;
+
+}
+
+.btn-full:link,.btn-full:visited,input[type=submit] {
+    background-color: #e67e22;
+    border-radius:160px;
+    color:white;
+    border: 1px solid #e67e22;
+    margin-right:15px;
+}
+
+.btn-full:hover,.btn-full:active,input[type=submit] {
+    background-color:#cf6d17;
+}
+
+.btn-empty:link,.btn-empty:visited {
+    border: 1px solid #e67e22;
+    color:#e67e22;
+    border-radius:160px;
+}
+
+.btn-empty:hover,.btn-empty:active {
+    background-color:#cf6d17;
+    color:#fff
+
+}
+
+/* ------------------------------ */
+/* Navbar  */
+/* ------------------------------ */
+
+
+
+.navbarList {
+    /* display: inline-block; */
+    float: right;
+    list-style-type: none;
+}
+
+.navbarLink:link,.navbarLink:visited {
+    color: white;
+    margin:10px;
+    text-decoration: none;
+    text-transform:uppercase;
+    border-bottom: 1px solid transparent;
+    padding-bottom:8px;
+    transition:border-bottom 0.7s,border 0.2s,color 0.2s 
+}
+
+.navbarLink:hover,.navbarLink:active {
+    border-bottom: 2px solid #cf6d17;
+   
+}
+
+/* Sticky navigation */
+
+.sticky {
+    position: fixed;
+    width:100%;
+    left:0;
+    right:0;
+    background-color: rgba(255, 255, 255, 0.952);
+    box-shadow:9  2px 2px rgba(255, 255, 255, 0.918);
+    z-index: 9999;
+}
+
+.sticky .navbarLink:link,.sticky .navbarLink:visited {
+    color:#555;
+    padding:15px 0;
+}
+
+
+.sticky .logoBlack {
+    display: block;
+    height:50px;
+    width:auto;
+    float:left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.sticky .logoIcon {
+    display: none;
+}
+
+.sticky .navbarList {
+    margin-top:10px;
+}
+
+/* Mobile navigation */
+.mobile-nav-icon {
+    float:right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: white;
+}
+
+/* ------------------------------ */
+/*Features section */
+/* ------------------------------ */
+
+
+
+.featuresText {
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.featureBox {
+    padding:2%;
+}
+
+.iconFeature {
+    font-size: 350%;
+    color:#e67e22;
+    margin-bottom:2%;
+    margin-left:25%;
+}
+
+/* ------------------------------ */
+/*Images section */
+/* ------------------------------ */
+
+.ImageGallery ul {
+    width:20%; 
+    list-style: none;
+    width: 100%;
+
+}
+
+.ImageGallery li {
+   display: block;
+   float: left;
+   width:25%;
+   overflow: hidden;
+   background: black;
+}
+
+.ImageGallery li img {
+    opacity: 0.7;
+    width:100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s,opacity 0.5s ;
+}
+
+.ImageGallery li img:hover {
+    opacity: 1;
+    transform:scale(1.03);
+}
+
+
+.ImageGallery {
+    padding: 0;
+}
+
+/* ------------------------------ */
+/*How-it works section */
+/* ------------------------------ */
+
+.howItWorksSection {
+    background-color:#f3f3f3; 
+}
+
+.howItWorksList {
+    text-decoration: none;  
+    list-style-type: none;
+   margin-left: 5%;
+   margin-bottom: 10%;
+}
+
+.iphoneImg img {
+    height:370px;
+    margin-left:25%;
+    margin-top: 30px;
+}
+
+#appStoreImgIos {
+    width :31%;
+    height:59px;
+    margin-left:3%;
+
+}
+
+.appStoreImg {
+    margin-left:12%;
+   
+}
+
+.stepsBox {
+    margin-top: 30px;
+}
+
+.howItWorksList span {
+    color:#e67e22;
+    border : 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float:left;
+    font-size: 120%;
+    margin-right:25px;
+}
+
+.howItWorksList p {
+    margin-bottom:40px;
+}
+
+
+/* ------------------------------ */
+/*Cities section */
+/* ------------------------------ */
+
+.citiesImg p {
+    display: inline-block;
+    margin-left: 5%;
+    color:black;
+    margin-bottom: 2px;
+}
+
+.citiesImg img {
+    width:85%;
+    
+}
+
+.citiesImg i {
+    color:#cf6d17
+}
+
+#twitter {
+    color:#cf6d17;
+    border-bottom: 1px solid #cf6d17;
+    padding-bottom: 2px;
+}
+
+
+/* ------------------------------ */
+/*Customers Testimonials section */
+/* ------------------------------ */
+.customerTestimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.705)),url("pizza-background.jpg");
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 100vh;
+
+}
+
+.testimonialsTitle {
+    color:white;
+}
+
+.testimonials {
+    margin-top: 17px;
+}
+
+.testemonial {
+    color:white;
+    font-style: italic;
+}
+.testemonial img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.testemonial h5 {
+   display: inline-block;
+}
+
+/* ------------------------------ */
+/*Plans section */
+/* ------------------------------ */
+.signUp {
+    background-color:#f4f4f4 
+}
+
+.plans {
+   margin-left:14%;
+}
+
+.plans p {
+   display: inline-block;
+   font-size:80%;
+ }
+
+ .plan {
+     /* border:2px solid black; */
+     width:30%;
+     background-color: #fff;
+     border-radius:5px;
+     margin-left:5%;
+     padding:15px;
+     border-bottom: 1px solid  #e8e8e8 
+ }
+
+ .planHeader {
+    background-color:#fcfcfc;
+    border-bottom: 1px solid  #e8e8e8 
+ }
+
+ .plans h2 {
+     color:#cf6d17;
+ }
+
+.planDetails {
+    border-bottom: 1px solid  #e8e8e8 
+}
+
+.planDetails  i{
+   color: #cf6d17;
+ }
+
+ .plan a {
+     margin-left:15%;
+     margin-top: 7%;
+ }
+
+/* ------------------------------ */
+/*Contact form section */
+/* ------------------------------ */
+
+.map{
+    width: 100%;
+    height: 560px;
+    position: relative;
+    z-index: 0;
+}
+
+.map-box {
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+
+.form-box {
+    position: absolute;
+    width: 50%;
+    height: 560px;
+    padding-top:40px;
+    top:0;
+    right:0;
+    background-color: rgba(255, 255, 255, 0.808);
+    z-index: 10;
+}
+
+
+.contact-form {
+    margin-left: 20%;
+}
+
+input[type=text] ,input[type=email], select,textarea {
+    width:100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox]  {
+    margin:10px 5px 10px 0;
+}
+
+*:focus {outline: none}
+
+/* ------------------------------ */
+/* Footer */
+/* ------------------------------ */
+footer {
+    background-color: #333;
+    padding: 40px;
+font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+
+}
+
+.social-links {
+    list-style: none;
+    float:right;
+}
+
+.footer-nav li,.social-links li {
+    display: inline-block;
+    margin-right:20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right:0;
+}
+
+.footer-nav li a:link,.footer-nav li :visited, .social-links:link,.social-links:visited {
+    text-decoration: none;
+    border:0;
+    color:#888;
+    transition: color 0.3s;
+}
+
+.footer-nav li a:hover,.footer-nav li :active,{
+    color:#ddd;
+}
+
+.footer p {
+    color:#888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links li a:link,.social-links li a:visited {
+    font-size: 160%;
+
+}
+
+.ion-social-facebook,ion-social-twitter,ion-social-googleplus,ion-social-instagram {
+    transition: color 0.3s
+}
+
+.ion-social-facebook:hover {
+    color:#3b5998;
+}
+.ion-social-twitter:hover {
+    color:#00aced;
+}
+.ion-social-googleplus:hover {
+    color:#dd3b39;
+}
+.ion-social-instagram:hover {
+    color:#517fa4;
+}
+
+/* Animations */
+
+.js-wp-1,.js-wp-2 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js-wp-1 .animated,
+.s-wp-2 .animated
+{
+    opacity: 1;
+}
+
+.js-wp-3 {
+    animation-duration: 1s;
+}
