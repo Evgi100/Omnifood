@@ -1,0 +1,23 @@
+{
+  "name": "omnifood-samplesite",
+  "version": "1.0.0",
+  "description": "A Project sample web site ",
+  "main": "index.js",
+  "dependencies": {
+    "waypoints": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evgi100/Omnifood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evgi100/Omnifood/issues"
+  },
+  "homepage": "https://github.com/Evgi100/Omnifood#readme"
+}
