@@ -217,7 +217,7 @@ input[type=submit] {
 /* Mobile navigation */
 .mobile-nav-icon {
     float:right;
-    margin-top: 30px;
+    margin-top:15px;
     cursor: pointer;
     display: none;
 }
@@ -225,6 +225,7 @@ input[type=submit] {
 .mobile-nav-icon i {
     font-size: 200%;
     color: white;
+    cursor: pointer;
 }
 
 /* ------------------------------ */
@@ -358,6 +359,10 @@ input[type=submit] {
     
 }
 
+.bkk{
+    height:6rem;
+}
+
 .citiesImg i {
     color:#cf6d17
 }
@@ -377,7 +382,7 @@ input[type=submit] {
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 135vh;
 
 }
 

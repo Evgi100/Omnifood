@@ -22,7 +22,7 @@ $(document).ready(function () {
     $('.js-wp-2').waypoint(function (direction) {
         $('.js-wp-2').addClass('animated fadeInUp');
     }, {
-            offset: '50%'
+            offset: '80%'
         });
 
  
@@ -30,7 +30,7 @@ $(document).ready(function () {
     $('.js-wp-3').waypoint(function (direction) {
         $('.js-wp-3').addClass('animated pulse');
     }, {
-            offset: '50%'
+            offset: '60%'
         });
 
 // Mobile nav

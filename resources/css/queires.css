@@ -17,8 +17,9 @@
 /* Small small to big tablets form 768px to 1023px */
 
 @media only screen and (max-width:1023px){
+
 body {font-size: 18px;}
-section { padding:60px 0}
+section { padding:60px 0;}
 
 .citiesImg i {
     width:17px;
@@ -33,42 +34,73 @@ section { padding:60px 0}
 
 .plans p { font-size:65%;}
 
+#appStoreImgIos{
+    width:44%;
+    height: 2.8rem;
 }
 
+#AndroidAppImg{
+  width:50%;
+}
 
+}
 
 /* Small phones to phablets/tablets from 481px to 767px */
 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:769px){
 
- body {font-size:16px;}
- section {padding :30px 0}
- .row,.header-text-box{padding:0 4%;}
+ body {
+     font-size:16px;
+    }
+ section {
+     padding :30px 0;
+    }
+ /* .row, .header-text-box{padding:0 4%;} */
 
- .col {width:100%;
-margin: 0 0 4% 0
+ .col {
+       width:100%;
+       margin: 0 0 4% 0;
 }
 
+h1 {
+    font-size: 180%;
+    }
 
-h1 { font-size: 180%;}
-h2{font-size: 140%;} 
+h2{
+    font-size: 140%;
+} 
 
-.mobile-nav-icon {display: inline-block;}
+.iphoneImg img{
+    text-align: center;
+}
+/* -------------Mobile navigation bar--------------------- */
+
+.mobile-nav-icon {display: inline-block}
+
+.nav-list li{
+    display: block;
+}
 
 .navbarList {
     float: left;
-    display: block;
-    margin-top: 35px;
-    margin-left: 25px;
-                             
+      display: block;
+    /* margin-top: 35px;
+    margin-left: 25px;      */
 }
 
-.navbarLink {
+.navbarList{
+    float:none;
+}
+
+
+.navbarLink:link,
+.navbarLink:visited {
     display: block;
     /* On mobile devices there is no hover effects and we cancel the hover border */
     border: 0;
     padding:10px 0;
-    font-size: 100%;
+    font-size: 120%;
+    margin-left: 5rem;
 }
 
 .nav-list{
@@ -78,6 +110,29 @@ h2{font-size: 140%;}
 
 .sticky .mobile-nav-icon i {
     color:black;
+    margin-top: 10px;
+}
+
+.header-text-box{
+    position: relative;
+    width: 100%;
+    padding: 0 2%;
+    margin-top: 2rem;
+}
+
+/* ------------------------- */
+
+#appStoreImgIos{
+    width:40%; 
+    height: 5rem;
+}
+
+#AndroidAppImg{
+  width:40%;
+}
+
+.appStoreImg{
+    text-align: center;
 }
 
 .map{
@@ -89,7 +144,7 @@ h2{font-size: 140%;}
 
 .map-box {
     width: 100%;
-    height:300px;
+    height:163vh;
     position: relative;
 }
 
@@ -100,19 +155,60 @@ h2{font-size: 140%;}
     padding:30px 0;
 }
 
-};
+.bkk{
+    height:14rem;
+}
 
+.footer-nav li, .social-links li {
+    display: inline-block;
+    margin-right: 19px;
+    width: 1rem;
+}
 
-
-
-
-
+}
 
 
 /* Small phones from 0 to 480px */
 
 @media only screen and (max-width:480px){
+
     section {padding : 25px 0;}
-    
+
+    #appStoreImgIos{
+        width:40%; 
+    }
+
+    #AndroidAppImg{
+      width:40%;
+      height: 4.4rem;
+    }
+
+    .btn-full:link{
+        margin-bottom: 1.5rem;
+    }
+
+    h1{
+        margin-bottom: 2rem;
+    }
+
+    .navbarLink:link,
+    .navbarLink:visited {
+        display: block;
+        /* On mobile devices there is no hover effects and we cancel the hover border */
+        border: 0;
+        padding:2.5px 0;
+        font-size: 100%;
+        margin-left: 5rem;
+    }
+
+    .header-text-box {
+        position: relative;
+        width: 100%;
+        padding: 0 2%;
+        margin-top: -0.8rem;
+        margin-left: 0.7rem;
+        top:37.5%;
+    }
+
 }
 
