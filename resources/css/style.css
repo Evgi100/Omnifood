@@ -380,8 +380,7 @@ input[type=submit] {
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
-    height: 135vh;
-
+    height: 60vh;
 }
 
 .testimonialsTitle {

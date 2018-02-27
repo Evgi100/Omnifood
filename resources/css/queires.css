@@ -45,7 +45,7 @@ section { padding:60px 0;}
 
 }
 
-/* Small phones to phablets/tablets from 481px to 767px */
+/* Small phones to phablets/tablets from 769px to 467px */
 
 @media only screen and (max-width:769px){
 
@@ -118,6 +118,8 @@ h2{
     width: 100%;
     padding: 0 2%;
     margin-top: 2rem;
+    top:30%;
+    left:65%;
 }
 
 /* ------------------------- */
@@ -144,7 +146,7 @@ h2{
 
 .map-box {
     width: 100%;
-    height:163vh;
+    height:107vh;
     position: relative;
 }
 
@@ -155,7 +157,21 @@ h2{
     padding:30px 0;
 }
 
+.ImageGallery ul{
+    padding: 0rem;
+}
 
+.customerTestimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.712),rgba(0, 0, 0, 0.705)),url("pizza-background.jpg");
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 80vh;
+}
+
+.plans {
+    margin-left: 5.8%;
+}
 
 .footer-nav li, .social-links li {
     display: inline-block;
@@ -163,6 +179,9 @@ h2{
     width: 1rem;
 }
 
+.planDetails{
+    font-size: 130%;
+}
 }
 
 
@@ -174,6 +193,7 @@ h2{
 
     #appStoreImgIos{
         width:40%; 
+        height: 8.5%;;
     }
 
     #AndroidAppImg{
@@ -206,6 +226,17 @@ h2{
         margin-top: -0.8rem;
         margin-left: 0.7rem;
         top:37.5%;
+        left:49%;
+    }
+
+    .map-box {
+        width: 100%;
+        height: 94vh;
+        position: relative;
+    }
+
+    .contact-form {
+        margin-left: 7%;
     }
 
 }
